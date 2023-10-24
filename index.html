@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Payment App</title>
+</head>
+<body>
+    <header>
+        <h1>My Payment App</h1>
+    </header>
+    <main>
+        <div class="payment-form">
+            <h2>Make a Payment</h2>
+            <form id="payment-form">
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" required>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <button type="submit">Pay</button>
+            </form>
+            <div id="payment-response" class="hidden">
+                <p id="payment-message"></p>
+                <p id="transaction-id"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 My Payment App
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
